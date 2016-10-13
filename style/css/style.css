@@ -78,7 +78,7 @@
 }
 @font-face {
   font-family: 'Open Sans';
-  font-style: italic;
+  
   font-weight: 400;
   src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
 }
@@ -170,11 +170,10 @@ center .ui-spinner {
 
 input.custom-spinner {
 	position: absolute;
-	top: 0;
-	left: 0;
+	left: 30;
 	display: block;
 	padding: 0 15px;
-	width: 100%;
+	width: 50px;
 	height: 43px;
 	background: #FFF;
 	border: 1px solid #EEE;
@@ -639,7 +638,7 @@ input.custom-spinner {
 	height: auto;
 	font-family: 'Lobster', cursive;
 	font-size: 14px;
-	font-style: italic;
+	
 	text-transform: none;
 	letter-spacing: 1px;
 }
@@ -650,8 +649,8 @@ input.custom-spinner {
 	margin-top: 15px;
 	font-family: 'Lobster', cursive;
 	font-size: 13px;
-	font-style: italic;
-	color: #999;
+	
+	color: #b79921;
 }
 
 #right-menu .cart #shopping-cart .cont .item .item-details .item-price .sm {
@@ -685,7 +684,7 @@ input.custom-spinner {
 	width: 100%;
 	height: 40px;
 	background: #F6ECDD;
-	font-style: italic;
+	
 }
 
 .sub-nav .sub-nav-span {
@@ -756,7 +755,7 @@ input.custom-spinner {
 	height: 45px;
 	border: none;
 	border-bottom: 1px solid #EEE;
-	font-style: italic;
+	
 	color: #999;
 }
 
@@ -1209,7 +1208,7 @@ a.slider-btn.white:hover {
 	width: 100%;
 	font-family: 'Lobster', cursive;
 	font-size: 16px;
-	font-style: italic;
+	
 	float: left;
 }
 
@@ -1266,13 +1265,13 @@ p.welcometext::before {
 p.welcometext::after {
 	right: -100px;
 }
- 
+
 #welcome .img {
 	position: relative;
 	margin: 0;
 	padding: 50% 0;
 	width: 100%;
-	background: url('../img/home/offer-bg.jpg') no-repeat center center;
+    background: url('../../assets/img/home/offer-bg.jpg') no-repeat center center;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -1302,7 +1301,7 @@ p.welcometext::after {
 	font-family: 'Old Standard TT', serif;
 	font-size: 120px;
 	font-weight: bold;
-	font-style: italic;
+	
 	color: #EFE4D3;
 }
  
@@ -1339,6 +1338,81 @@ p.welcometext::after {
 }
 
 #welcome .img span.items {
+	position: absolute;
+	bottom: 30%;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	letter-spacing: 5px;
+	text-align: center;
+	color: #736550;
+}
+
+/*------------------------------------------------------------------
+[Home page " Categories" section / #categories]
+*/
+ 
+ h2 {
+	 font-family: 'Old Standard TT', serif;
+	 font-size: 36px;
+	 font-weight: normal;
+	 color: #000;
+ }
+ 
+h2.categories,
+h2.top {
+	margin: 100px 0 30px 0;
+ }
+ 
+ p.categoriestext {
+	 position: relative;
+	 width: 40%;
+	 margin: 0 30% 70px 30%;
+	 font-family: 'Old Standard TT', serif;
+	 font-size: 16px;
+	 line-height: 40px;
+	 color: #555;
+ }
+ 
+p.categoriestext::before, 
+p.categoriestext::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	content: '';
+	width: 100px;
+	height: 1px;
+	background: #736550;
+}
+
+#categories {
+    background-color: #232642;
+}
+
+#categories .img {
+	position: relative;
+	margin: 0;
+	padding: 50% 0;
+	width: 100%;
+    background-color: #232642;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#categories .img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#categories .img span.title {
 	position: absolute;
 	bottom: 30%;
 	left: 0;
@@ -1691,7 +1765,7 @@ h2.wline::before {
 	width: 100%;
 	font-family: 'Lobster', cursive;
 	font-size: 16px;
-	font-style: italic;
+	
 	float: left;
 }
 
@@ -1703,7 +1777,7 @@ h2.wline::before {
 #featured .product .price,
 #portfolio .product .price {
 	margin: 0 30px;
-	color: #888;
+	color: #b79921;
 }
 
 #featured .product .price .sm,
@@ -1916,10 +1990,12 @@ h2.wline::before {
 */
 
 #featured-product-wslider {
-	margin: 60px 0;
+    background-color: #edebe3;
+    height: 850px;
 }
 
 #featured-product-wslider h2 {
+    background-color: #edebe3;
 	text-align: right;
 }
 
@@ -2016,7 +2092,7 @@ h2.wline::before {
 	margin-bottom: 15px;
 	width: 100%;
 	font-family: 'Lobster', cursive;
-	font-style: italic;
+	
 	float: left;
 }
 
@@ -2027,13 +2103,13 @@ h2.wline::before {
 
 #ps-textbox .ps-product-price {
 	font-size: 14px;
-	color: #999;
+	color: #b79921;
 }
 
 #ps-textbox .ps-product-price .old {
 	margin-right: 15px;
 	text-decoration: line-through;
-	color: #C1C1C1;
+	color: #b79921;
 }
 
 #ps-textbox .ps-product-price .sm {
@@ -2091,10 +2167,10 @@ h2.wline::before {
 	width: 0;
 	height: 0;
 	background: #202020;
-	border-top: 5px solid rgba(255, 255, 255, 0.99);
-	border-bottom: 5px solid rgba(255, 255, 255, 0.99);
+	border-top: 5px solid #edebe3;
+	border-bottom: 5px solid #edebe3;
 	border-left: 5px solid #202020;
-	border-right: 5px solid rgba(255, 255, 255, 0.99);
+	border-right: 5px solid #edebe3;
 	transition: 0.2s ease;
 }
 
@@ -2109,7 +2185,7 @@ h2.wline::before {
 	display: block;
 	width: 100%;
 	height: auto;
-	background: #FFF;
+	background: #edebe3;
 	float: left;
 }
 
@@ -2159,7 +2235,6 @@ h2.wline::before {
 	width: 100%;
 	font-family: 'Lobster', cursive;
 	font-size: 16px;
-	font-style: italic;
 	float: left;
 }
 
@@ -2175,7 +2250,7 @@ h2.wline::before {
 #related-products .product .price,
 #product .price {
 	margin: 0 15px;
-	color: #888;
+	color: #b79921;
 }
 
 #top-products .product .price .sm,
@@ -2297,7 +2372,6 @@ h2.wline::before {
 
 #bigimgs {
 	display: block;
-	margin: 100px 0;
 	width: 100%;
 	height: 450px;
 }
@@ -2314,7 +2388,7 @@ h2.wline::before {
 	display: block;
 	width: 100%;
 	height: 450px;
-	background: #232642;
+	background: #c1a536;
 }
 
 #bigimgs .banner .title {
@@ -2667,14 +2741,14 @@ h2.journal {
 	line-height: 30px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 32px;
+	font-size: 22px;
 	color: #FFF;
 	text-align: center;
 	letter-spacing: 4px;
 }
 
 .newsletter-form form {
-	padding-top: 100px;
+	padding-top: 60px;
 	display: block;
 }
 
@@ -2682,8 +2756,9 @@ h2.journal {
 	box-sizing: border-box;
 	display: block;
 	padding: 10px;
-	width: 100%;
-	height: 40px;
+    margin-left: 20px;
+	width: 320px;
+	height: 35px;
 	background: #c4c299;
 	border: none;
 }
@@ -2693,12 +2768,13 @@ h2.journal {
 	display: block;
     vertical-align: middle;
     margin-top: 5px;
-	width: 100%;
-	height: 30px;
+	width: 80px;
+	height: 25px;
 	line-height: 20px;
-	background: #c4b987;
+	background: #a58c4d;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
 	text-transform: uppercase;
 	color: #FFF;
 	cursor: pointer;
@@ -2770,10 +2846,10 @@ h2.journal {
 	display: block;
 	position: absolute;
 	top: 30%;
-	left: 0;
+	right: 0px;
 	padding: 15px 30px;
 	height: auto;
-	background: rgba(0, 0, 0, 0.2);
+	background-color: #232747;
 	color: #FFF;
 }
 
@@ -3054,7 +3130,7 @@ h2.journal {
 	display: block;
 	margin: 15px 0;
 	width: 100%;
-	font-style: italic;
+	
 	color: #736550;
 }
 
@@ -3237,7 +3313,7 @@ h2.journal {
 	top: 0;
 	left: 0;
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 55px;
 	padding: 0 15px;
     width: auto;
     height: 43px;
@@ -3524,7 +3600,7 @@ h2.journal {
 	height: 45px;
 	border: 1px solid #EEE;
 	border-right: none;
-	font-style: italic;
+	
 	color: #888;
 }
 
@@ -3793,7 +3869,7 @@ h2.journal {
 	height: auto;
 	font-family: 'Lobster', cursive;
 	font-size: 14px;
-	font-style: italic;
+	
 	text-transform: none;
 	letter-spacing: 1px;
 }
@@ -3804,8 +3880,8 @@ h2.journal {
 	margin-top: 15px;
 	font-family: 'Lobster', cursive;
 	font-size: 13px;
-	font-style: italic;
-	color: #999;
+	
+	color: #b79921;
 }
 
 .sidebar .related .item .item-details .item-price .sm {
@@ -3966,7 +4042,7 @@ h2.about-us-title {
 	padding: 60px 30px 30px 30px;
 	width: 100%;
 	height: auto;
-	background: url('../img/home/offer-bg.jpg') no-repeat center center;
+	background: url('../../assets/img/home/offer-bg.jpg') no-repeat center center;
 }
 
 #our-clients-say .client-story img {
@@ -4003,7 +4079,7 @@ h2.about-us-title {
 	width: 100%;
 	height: auto;
 	font-size: 12px;
-	font-style: italic;
+	
 	text-align: center;
 }
 
@@ -4173,7 +4249,7 @@ h2.about-us-title {
 	display: block;
 	width: 100%;
 	font-size: 10px;
-	font-style: italic;
+	
 	color: #202020;
 }
 
@@ -4274,7 +4350,7 @@ h2.about-us-title {
 	height: 20px;
 	line-height: 20px;
 	text-transform: capitalize;
-	font-style: italic;
+	
 	float: left;
 }
 
@@ -4289,7 +4365,7 @@ h2.about-us-title {
 	height: 20px;
 	line-height: 20px;
 	text-transform: capitalize;
-	font-style: italic;
+	
 	color: #BEA88B;
 	float: left;
 }
@@ -4415,7 +4491,7 @@ h2.about-us-title {
 	width: auto;
 	height: auto;
 	line-height: 30px;
-	font-style: italic;
+	
 }
 
 .blog-post .blog-post-details > span {
@@ -4496,7 +4572,7 @@ section.author {
 
 .author-info .author-job,
 .author-info .date {
-	font-style: italic;
+	
 	color: #736550;
 }
 
@@ -4631,11 +4707,11 @@ section.author {
 	width: 100%;
 	font-family: 'Lobster', cursive;
 	font-size: 16px;
-	font-style: italic;
+	
 }
 
 .table .td .product-type {
-	font-style: italic;
+	
 	color: #736550;
 }
 
@@ -4742,8 +4818,8 @@ section.author {
 	padding-top: 30px;
 	width: 100%;
 	font-family: 'Lobster', cursive;
-	font-style: italic;
-	color: #888;
+	
+	color: #b79921;
 	float: left;
 }
 
@@ -4823,8 +4899,8 @@ section.author {
 
 #shopping-cart-sub .table .price {
 	font-family: 'Lobster', cursive;
-	font-style: italic;
-	color: #888;
+	
+	color: #b79921;
 }
 
 #shopping-cart-sub input[type="submit"].brown {
@@ -4887,8 +4963,8 @@ section.author {
 
 #checkout .table .price {
 	font-family: 'Lobster', cursive;
-	font-style: italic;
-	color: #888;
+	
+	color: #b79921;
 }
 
 #checkout .table .id {
@@ -5250,5 +5326,7 @@ section.author {
 	.blog-post-img .text {
 		top: 25%;
 	}
+    
+    a { color: "transparent"; } 
 	
 }

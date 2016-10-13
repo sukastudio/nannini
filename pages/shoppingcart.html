@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Fashionist - Shopping cart</title>
+		<link rel="StyleSheet" href="../style/css/bootstrap.min.css" />
+		<link rel="StyleSheet" href="../style/iconfont/style.css" />
+		<link rel="StyleSheet" href="../style/css/rs-slider.css" />
+		
+		<!-- get jQuery from the google apis -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+		<!-- jQuery UI -->
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script>
+		$( function() {
+			$(".custom-spinner" ).spinner({
+				min: 1,
+				page: 1
+			});
+		});
+		</script>
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $('.header').load("../common/header/desktop/mainheader.html");
+                $('.mobileheader').load("../common/header/mobile/mainheader.html");
+                $('.shopdetail').load("../contents/shop/shopdetailcontent.html");
+                $('.mainfooter').load("../common/footer/footer.html");
+            });
+        </script>
+		
+		<link rel="StyleSheet" href="../style/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	</head>
+	
+	<body>
+		<!-- Main header -->
+		<header id="mainh" class="container-fluid hidden-xs hidden-sm hidden-md">
+			<div class="header"></div>
+		</header>
+		<!-- /Main header -->
+		
+		<div class="sub-nav hidden-xs hidden-sm hidden-md">
+			<div class="container">
+				<div class="row">
+					<span class="sub-nav-span"><a href="home.html">Home</a> > <a href="shoppingcart.html" class="active">Shopping Cart</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- /Main header -->
+		
+		<!-- Mobile header -->
+		<header id="mobile-header" class="container-fluid hidden-lg">
+			<div class="mobileheader"></div>
+		</header>
+		<!-- /Mobile header -->
+		
+		<!-- Page content -->
+		<div class="content" id="shopping-cart-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 table">
+						<div class="row th">
+							<div class="col-xs-12 col-sm-4 col-md-3"><span class="th-title">Product</span></div>
+							<div class="hidden-xs col-sm-2 text-center"><span class="th-title">Quantity</span></div>
+							<div class="hidden-xs col-sm-2 text-center"><span class="th-title">ID number</span></div>
+							<div class="hidden-xs col-sm-2 text-center"><span class="th-title">Price</span></div>
+							<div class="hidden-xs col-sm-2 text-center"><span class="th-title">Subtotal</span></div>
+						</div>
+						
+						<!-- Table row -->
+						<div class="row tr">
+							<div class="col-md-offset-1 col-sm-2 col-md-1 hidden-xs td">
+								<div class="remove"><span class="icon-remove"></span></div>
+								<img src="../assets/img/products/bags/DSC_2325.jpg" alt="" />
+							</div>
+							
+							<div class="col-xs-6 col-sm-2 td">
+								<span class="product-name">Woman's Bag</span>
+								<span class="product-type">Bag</span>
+							</div>
+							
+							<div class="col-xs-3 col-sm-2 td text-center" style="padding-left: 60px;">
+								<center>
+									<input id="quantity" class="custom-spinner" value="1" />
+								</center>
+							</div>
+							
+							<div class="col-sm-2 hidden-xs td text-center">
+								<span class="product-id">AFN - 924222134</span>
+							</div>
+							
+							<div class="col-sm-2 hidden-xs td text-center">
+								<span class="product-price">$79,<span class="sm">00</span></span>
+							</div>
+							
+							<div class="col-xs-3 col-sm-2 td text-center">
+								<span class="product-price black">$79,<span class="sm">00</span></span>
+							</div>
+						</div>
+						<!-- /Table row -->
+						
+						<!-- Table row -->
+						<div class="row tr">
+							<div class="col-md-offset-1 col-sm-2 col-md-1 hidden-xs td">
+								<div class="remove"><span class="icon-remove"></span></div>
+								<img src="../assets/img/products/wallets/DSC_2544.jpg" alt="" />
+							</div>
+							
+							<div class="col-xs-6 col-sm-2 td">
+								<span class="product-name">Woman's Purse</span>
+								<span class="product-type">Purse</span>
+							</div>
+							
+							<div class="col-xs-3 col-sm-2 td" style="padding-left: 60px;">
+								<center>
+									<input id="quantity" class="custom-spinner" value="1" />
+								</center>
+							</div>
+							
+							<div class="col-sm-2 hidden-xs td text-center">
+								<span class="product-id">AFN - 924222134</span>
+							</div>
+							
+							<div class="col-sm-2 hidden-xs td text-center">
+								<span class="product-price">$79,<span class="sm">00</span></span>
+							</div>
+							
+							<div class="col-xs-3 col-sm-2 td text-center">
+								<span class="product-price black">$79,<span class="sm">00</span></span>
+							</div>
+						</div>
+						<!-- /Table row -->
+					</div>
+					
+					<button class="continue">Continue shopping</button>
+					<button class="update"><span class="icon-refresh"></span> Update cart</button>
+				</div>
+			</div>
+			
+
+			<section id="shopping-cart-sub">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<span class="title">Calculate shipping</span>
+							<p class="info">At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+									
+							<form>
+								<label>Country</label>
+								<select name="country" class="custom-select">
+									<option>- select a country -</option>
+									<option>Germany</option>
+									<option>United Kingdom</option>
+									<option>Italy</option>
+								</select>
+								
+								<label>State / Province</label>
+								<select name="country" class="custom-select">
+									<option>- select a state -</option>
+									<option>Baden-Württemberg</option>
+									<option>Bavaria</option>
+									<option>Thuringia</option>
+								</select>
+								
+								<label for="zip">Zip / Postal code <em>*</em></label>
+								<input type="text" name="zip" id="zip" placeholder="zip / postal code" />
+								
+								<input type="submit" name="calculate_shipping" value="Calculate" />
+							</form>
+						</div>
+									
+						<div class="col-xs-12 col-md-4">
+							<span class="title">Enter coupon code</span>
+							<p class="info">At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+							
+							<form>
+								<label for="coupon">Coupon code</label>
+								<input type="text" name="coupon" id="coupon" />
+								
+								<input type="submit" name="apply_code" value="Apply code" />
+							</form>
+						</div>
+									
+						<div class="col-xs-12 col-md-4">
+							<span class="title">Cart total</span>
+								
+							<div class="row">
+								<div class="col-xs-12 table">
+									<div class="row tr">
+										<div class="col-xs-6 td"><span class="title">Subtotal</span></div>
+										<div class="col-xs-6 td text-right"><span class="price">$197,<span class="sm">00</span></span></div>
+									</div>
+										
+									<div class="row tr">
+										<div class="col-xs-6 td"><span class="title">Shipping</span></div>
+										<div class="col-xs-6 td text-right"><i>free shipping</i></div>
+									</div>
+										
+									<div class="row tr">
+										<div class="col-xs-6 td"><span class="title">Order total</span></div>
+										<div class="col-xs-6 td text-right"><span class="price black">$197,<span class="sm">00</span></span></div>
+									</div>
+								</div>
+							</div>
+							
+							<input type="submit" class="brown" name="proceed_checkout" value="Proceed checkout" />
+						</div>
+				
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<!-- Footer -->
+		<footer id="footer" class="bordertop">
+			<div class="mainfooter"></div>
+		</footer>
+
+	</body>
+	
+	<script type="text/javascript" src="template/scripts/fashionist.js"></script>
+</html>

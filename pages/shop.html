@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nannini - Shop</title>
+		<link rel="StyleSheet" href="../style/css/bootstrap.min.css" />
+		<link rel="StyleSheet" href="../style/iconfont/style.css" />
+		<link rel="StyleSheet" href="../style/css/rs-slider.css" />
+		<link rel="StyleSheet" href="../style/css/perfect-scrollbar.css" />
+		<!-- LightBox CSS -->
+		<link href="../style/css/lightbox.css" rel="stylesheet">
+		<link rel="StyleSheet" href="../style/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="../style/scripts/jquery-1.10.1.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $('.header').load("../common/header/desktop/mainheader.html");
+                $('.mobileheader').load("../common/header/mobile/mainheader.html");
+                $('.shoplist').load("../contents/shop/shopcontent.html");
+                $('.mainfooter').load("../common/footer/footer.html");
+            });
+        </script>
+	</head>
+	
+	<body>
+		<!-- Main header -->
+		<header id="mainh" class="container-fluid hidden-xs hidden-sm hidden-md">
+			<div class="header"></div>
+		</header>
+		<!-- /Main header -->
+		
+		<div class="sub-nav hidden-xs hidden-sm hidden-md">
+			<div class="container">
+				<div class="row">
+					<span class="sub-nav-span"><a href="home.html#">Home</a> > <a href="shop.html#" class="active">Nannini Shop</a></span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Mobile header -->
+		<header id="mobile-header" class="container-fluid hidden-lg">
+			<div class="mobileheader"></div>
+		</header>
+		
+		<div class="shoplist"></div>
+        
+        <!-- Footer -->
+		<footer id="footer" class="bordertop">
+			<div class="mainfooter"></div>
+		</footer>
+
+	</body>
+	
+	<script type="text/javascript" src="../style/scripts/fashionist.js"></script>
+	<script type="text/javascript" src="../style/scripts/perfect-scrollbar.jquery.js"></script>
+	
+	<!-- LightBox JS -->
+	<script src="template/scripts/lightbox.js"></script>
+	<script>
+	lightbox.option({
+		'fadeDuration': 400,
+		'resizeDuration': 400
+	});
+	</script>
+</html>
