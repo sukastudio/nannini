@@ -1,0 +1,71 @@
+<!-- Shop Cart Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-4">
+			<span class="title">Calculate shipping</span>
+			<p class="info">At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+					
+			<form>
+				<label>Country</label>
+				<select name="country" class="custom-select">
+					<option>- select a country -</option>
+					<option>Germany</option>
+					<option>United Kingdom</option>
+					<option>Italy</option>
+				</select>
+				
+				<label>State / Province</label>
+				<select name="country" class="custom-select">
+					<option>- select a state -</option>
+					<option>Baden-Württemberg</option>
+					<option>Bavaria</option>
+					<option>Thuringia</option>
+				</select>
+				
+				<label for="zip">Zip / Postal code <em>*</em></label>
+				<input type="text" name="zip" id="zip" placeholder="zip / postal code" />
+				
+				<input type="submit" name="calculate_shipping" value="Calculate" />
+			</form>
+		</div>
+					
+		<div class="col-xs-12 col-md-4">
+			<span class="title">Enter coupon code</span>
+			<p class="info">At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+			
+			<form>
+				<label for="coupon">Coupon code</label>
+				<input type="text" name="coupon" id="coupon" />
+				
+				<input type="submit" name="apply_code" value="Apply code" />
+			</form>
+		</div>
+					
+		<div class="col-xs-12 col-md-4">
+			<span class="title">Cart total</span>
+				
+			<div class="row">
+				<div class="col-xs-12 table">
+					<div class="row tr">
+						<div class="col-xs-6 td"><span class="title">Subtotal</span></div>
+						<div class="col-xs-6 td text-right"><span class="price"><div class="simpleCart_total"></div></span></div>
+					</div>
+						
+					<div class="row tr">
+						<div class="col-xs-6 td"><span class="title">Shipping</span></div>
+						<div class="col-xs-6 td text-right"><i>free shipping</i></div>
+					</div>
+						
+					<div class="row tr">
+						<div class="col-xs-6 td"><span class="title">Order total</span></div>
+						<div class="col-xs-6 td text-right"><span class="price black"><div class="simpleCart_total"></div></span></div>
+					</div>
+				</div>
+			</div>
+			
+			<input type="submit" class="brown" name="proceed_checkout" value="Proceed checkout" />
+		</div>
+
+	</div>
+</div>
+<!-- Shop Cart Content -->

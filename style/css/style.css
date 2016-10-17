@@ -32,21 +32,14 @@
 
 /*---- Fonts from Google Fonts ----*/
 
-@font-face {
-  font-family: 'Lobster';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v18/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
-}
 
-/*font-family: 'Lobster', cursive;*/
 
-@font-face {
-  font-family: 'Cookie';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cookie-Regular'), url(https://fonts.gstatic.com/s/cookie/v7/Tvkve1y-JrkMx2S9u2OW1g.woff) format('woff');
-}
+/*font-family: 'Montserrat', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700');
+
 
 @font-face {
   font-family: 'Montserrat';
@@ -153,7 +146,13 @@ textarea {
 	font-family: 'Open sans', sans-serif;
 }
 
-.ui-spinner {
+table,
+simpleCart_items table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ui-spinner {
 	position: relative;
 	display: inline-block;
 	width: 60px;
@@ -218,7 +217,7 @@ input.custom-spinner {
 
 #mainh {
 	position: relative;
-	height: 100px;
+	height: 98px;
 	background: #FFF;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
@@ -227,13 +226,14 @@ input.custom-spinner {
 
 #logo {
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 40px;
+    margin-right: 25px;
 	width: auto;
 	height: 100px;
-	line-height: 100px;
+	line-height: 140px;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	float: left;
 }
 
@@ -251,7 +251,7 @@ input.custom-spinner {
 	width: auto;
 	height: 100px;
 	float: left;
-    font-size: 12px
+    font-size: 11px
 }
 
 #main-nav  .ul  {
@@ -262,13 +262,14 @@ input.custom-spinner {
 #main-nav .ul .li a {
 	position: relative;
 	display: inline-block;
-	padding: 0 30px;
+	padding: 0 20px;
 	height: 100px;
 	line-height: 100px;
 	text-decoration: none;
 	color: #000;
-	float: left;
+	float:right;
 	z-index: 100000;
+    letter-spacing: 1px;
 }
 
 #main-nav .ul .li .ul.submenu {
@@ -393,7 +394,7 @@ input.custom-spinner {
 	position: relative;
 	margin-bottom: 30px;
 	width: 100%;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 24px;
 }
 
@@ -441,6 +442,8 @@ input.custom-spinner {
 	display: inline-block;
 	width: auto;
 	height: 100px;
+    font-size:11px;
+    letter-spacing: 1px;
 	float: right;
 	z-index: 100000;
 }
@@ -523,8 +526,9 @@ input.custom-spinner {
 }
 
 #right-menu .acc .btn {
-	margin: 34px 0;
-	padding: 0 15px;
+	margin: 34px -12px 0 -9px;
+	padding: 0 14px;
+    margin-right: -19px;
 	width: auto;
 	height: 30px;
 	line-height: 30px;
@@ -577,12 +581,13 @@ input.custom-spinner {
 	position: absolute;
 	right: 0;
 	padding: 15px 0;
-	width: 300px;
+    margin-top: 14px;
+	width: 285px;
 	height: auto;
-	background: #FFF;
-	border: 1px solid #DDD;
+	background: #fefefe;
+	border: 1px solid #eeedf6;
 	opacity: 0;
-	transition: 0.5s ease;
+	transition: 1.3s ease;
 	z-index: 10000;
 }
 
@@ -636,7 +641,7 @@ input.custom-spinner {
 	display: block;
 	width: 100%;
 	height: auto;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 14px;
 	
 	text-transform: none;
@@ -647,7 +652,7 @@ input.custom-spinner {
 	display: block;
 	width: 100%;
 	margin-top: 15px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 13px;
 	
 	color: #b79921;
@@ -879,7 +884,7 @@ input.custom-spinner {
 	position: absolute;
 	right: 45px;
 	bottom: 45px;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 16px;
 	color: #736550;
 	opacity: 1;
@@ -890,7 +895,7 @@ input.custom-spinner {
 	position: absolute;
 	right: 30px;
 	bottom: 30px;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 14px;
 	color: #736550;
 	z-index: 10000;
@@ -914,13 +919,13 @@ input.custom-spinner {
 
 .big-bg-text {
 	display: block;
-	font-family: 'Cookie', cursive;
+	font-family: 'Yesteryear', cursive;
 	font-size: 600px;
 }
  
  .bigtext {
 	display: block;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 50px;
 	background: none;
 	text-transform: uppercase;
@@ -1206,7 +1211,7 @@ a.slider-btn.white:hover {
 	display: block;
 	padding: 15px;
 	width: 100%;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 16px;
 	
 	float: left;
@@ -1226,9 +1231,9 @@ a.slider-btn.white:hover {
 */
  
  h2 {
-	 font-family: 'Old Standard TT', serif;
+	 font-family: 'Cormorant Garamond', serif;
 	 font-size: 36px;
-	 font-weight: normal;
+	 font-weight: 700;
 	 color: #000;
  }
  
@@ -1241,7 +1246,7 @@ h2.top {
 	 position: relative;
 	 width: 40%;
 	 margin: 0 30% 70px 30%;
-	 font-family: 'Old Standard TT', serif;
+	 font-family: 'Cormorant Garamond', serif;
 	 font-size: 16px;
 	 line-height: 40px;
 	 color: #555;
@@ -1271,7 +1276,7 @@ p.welcometext::after {
 	margin: 0;
 	padding: 50% 0;
 	width: 100%;
-    background: url('../../assets/img/home/offer-bg.jpg') no-repeat center center;
+    background: url('../assets/img/home/offer-bg.jpg') no-repeat center center;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -1298,7 +1303,7 @@ p.welcometext::after {
 	width: 100px;
 	height: 100px;
 	line-height: 100px;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 120px;
 	font-weight: bold;
 	
@@ -1358,7 +1363,7 @@ p.welcometext::after {
 */
  
  h2 {
-	 font-family: 'Old Standard TT', serif;
+	 font-family: 'Cormorant Garamond', serif;
 	 font-size: 36px;
 	 font-weight: normal;
 	 color: #000;
@@ -1373,7 +1378,7 @@ h2.top {
 	 position: relative;
 	 width: 40%;
 	 margin: 0 30% 70px 30%;
-	 font-family: 'Old Standard TT', serif;
+	 font-family: 'Cormorant Garamond', serif;
 	 font-size: 16px;
 	 line-height: 40px;
 	 color: #555;
@@ -1671,8 +1676,9 @@ h2.wline { /*h2 with a line (decoration) on it's left side*/
 	position: relative;
 	display: inline-block;
 	margin: 0 30px 30px 0;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 30px;
+    font-weight: 700;
 	color: #000;
 	float: left;
 }
@@ -1691,7 +1697,7 @@ h2.wline::before {
 #featured .top .choose {
 	display: inline-block;
 	margin-top: 15px;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 16px;
 	float: left;
 }
@@ -1763,7 +1769,7 @@ h2.wline::before {
 	display: block;
 	margin: 15px 30px;
 	width: 100%;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 16px;
 	
 	float: left;
@@ -1836,7 +1842,7 @@ h2.wline::before {
 	margin: 60px auto;
 	width: auto;
 	height: auto;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 16px;
 	text-align: center;
 }
@@ -2091,8 +2097,9 @@ h2.wline::before {
 	display: block;
 	margin-bottom: 15px;
 	width: 100%;
-	font-family: 'Lobster', cursive;
-	
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 18px;
 	float: left;
 }
 
@@ -2219,7 +2226,17 @@ h2.wline::before {
 	overflow: hidden;
 }
 
-#top-products .product .name,
+#top-products .product .name{
+    box-sizing: border-box;
+	display: block;
+	margin: 15px;
+	width: 100%;
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+	font-size: 18px;
+	float: left;
+    
+}
 #top-products .product .price,
 #shop-grid .product .name,
 #shop-grid .product .price,
@@ -2233,12 +2250,21 @@ h2.wline::before {
 	display: block;
 	margin: 15px;
 	width: 100%;
-	font-family: 'Lobster', cursive;
-	font-size: 16px;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 14px;
 	float: left;
 }
 
-#top-products .product .name,
+#top-products .product .name{
+    box-sizing: border-box;
+	display: block;
+	margin: 15px;
+	width: 100%;
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+	font-size: 16px;
+	float: left;
+}
 #shop-grid .product .name,
 #related-products .product .name  {
 	cursor: pointer;
@@ -2397,7 +2423,7 @@ h2.wline::before {
 	padding: 30px 0;
 	width: 60%;
 	height: auto;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 30px;
 	color: #FFFFFF;
 	text-align: center;
@@ -2486,7 +2512,7 @@ h2.wline::before {
 */
 
 h2.journal {
-	margin: 100px 0 30px 0;
+	margin: 80px 0 30px 0;
 }
 
 #blog-archive {
@@ -2534,7 +2560,7 @@ h2.journal {
 	padding: 0 60px;
 	width: 100%;
 	height: auto;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 22px;
 	text-align: center;
 }
@@ -2714,7 +2740,7 @@ h2.journal {
 	width: 100%;
 	height: 150px;
 	line-height: 150px;
-	font-family: 'Cookie', cursive;
+	font-family: 'Yesteryear', cursive;
 	font-size: 400px;
 	text-align: center;
 	webkit-touch-callout: none;
@@ -2859,7 +2885,7 @@ h2.journal {
 	position: relative;
 	margin-bottom: 30px;
 	width: 100%;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 24px;
 }
 
@@ -3867,7 +3893,7 @@ h2.journal {
 	display: block;
 	width: 100%;
 	height: auto;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 14px;
 	
 	text-transform: none;
@@ -3878,7 +3904,7 @@ h2.journal {
 	display: block;
 	width: 100%;
 	margin-top: 15px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 13px;
 	
 	color: #b79921;
@@ -4042,7 +4068,7 @@ h2.about-us-title {
 	padding: 60px 30px 30px 30px;
 	width: 100%;
 	height: auto;
-	background: url('../../assets/img/home/offer-bg.jpg') no-repeat center center;
+	background: url('../assets/img/home/offer-bg.jpg') no-repeat center center;
 }
 
 #our-clients-say .client-story img {
@@ -4474,7 +4500,7 @@ h2.about-us-title {
 	text-align: center;
 }
 .blog-post-img .text .title {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 30px;
 	text-align: center;
 }
@@ -4705,7 +4731,7 @@ section.author {
 	display: block;
 	margin: 15px 0;
 	width: 100%;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 16px;
 	
 }
@@ -4728,7 +4754,7 @@ section.author {
 }
 
 .table .td .product-stock {
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	font-size: 14px;
 	color: #999;
 }
@@ -4817,7 +4843,7 @@ section.author {
 	display: block;
 	padding-top: 30px;
 	width: 100%;
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	
 	color: #b79921;
 	float: left;
@@ -4898,7 +4924,7 @@ section.author {
 }
 
 #shopping-cart-sub .table .price {
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	
 	color: #b79921;
 }
@@ -4962,7 +4988,7 @@ section.author {
 }
 
 #checkout .table .price {
-	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', cursive;
 	
 	color: #b79921;
 }
@@ -5055,7 +5081,7 @@ section.author {
 	width: 100%;
 	font-size: 16px;
 	font-weight: bold;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	text-transform: uppercase;
 	color: #000;
 	float: left;
@@ -5326,7 +5352,7 @@ section.author {
 	.blog-post-img .text {
 		top: 25%;
 	}
-    
-    a { color: "transparent"; } 
-	
+}
+a {
+    text-decoration:none;
 }

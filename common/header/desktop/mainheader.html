@@ -1,7 +1,7 @@
 <!-- Main header -->
 
 <div id="logo">
-    <img src="../../../assets/img/icon/nannini_logo.png" style="width:150px;">
+    <img src="../assets/img/icon/nannini_logo.png" style="width:150px;">
 </div>
 <div class="container">
 	<nav id="main-nav">
@@ -11,11 +11,11 @@
 			</div>
             
 			<div class="li">
-				<a href="home.html#">STORIES <span class="icon-down"></span></a>
+				<a href="stories.html#">STORIES <span class="icon-down"></span></a>
 				
 				<div class="ul submenu small">
 					<span class="title">Stories</span>
-					<span class="smrow"><a href="home.html">DetailStory</a></span>
+					<span class="smrow"><a href="stories.html">DetailStory</a></span>
 				</div>
 			</div>
 			
@@ -28,11 +28,11 @@
 					
 						<div class="row">
 							<div class="col-lg-3">
-								<span class="smrow"><a href="shop.html">Fresh Arrivals</a></span>
-								<span class="smrow"><a href="shop.html">Best Sellers</a></span>
-								<span class="smrow"><a href="shop.html">Bags</a></span>
-								<span class="smrow"><a href="shop.html">Wallets</a></span>
-								<span class="smrow"><a href="shop.html">Shoes</a></span>
+								<span class="smrow"><a href="shopbags.html">Fresh Arrivals</a></span>
+								<span class="smrow"><a href="shopbags.html">Best Sellers</a></span>
+								<span class="smrow"><a href="shopbags.html">Bags</a></span>
+								<span class="smrow"><a href="shoppurses.html">Wallets</a></span>
+								<span class="smrow"><a href="shopaccessories.html">Accessories</a></span>
 							</div>
 						</div>
 					</div>
@@ -44,14 +44,14 @@
 				
 				<div class="ul submenu small">
 					<span class="title">Shop pages</span>
-					<span class="smrow"><a href="shop.html">Bags</a></span>
-					<span class="smrow"><a href="shop.html">Wallets</a></span>
-					<span class="smrow"><a href="shop.html">Accessories</a></span>
+                    <span class="smrow"><a href="shopbags.html">Bags</a></span>
+					<span class="smrow"><a href="shoppurses.html">Wallets</a></span>
+					<span class="smrow"><a href="shopaccessories.html">Accessories</a></span>
 				</div>
 			</div>
 			
 			<div class="li">
-				<a href="shop.html">Store <span class="icon-down"></span></a>
+				<a href="stores.html">Store <span class="icon-down"></span></a>
 			</div>
             
             <div class="li">
@@ -72,36 +72,38 @@
 	</div>
 	
 	<div class="acc">
-		<a href="../../../pages/login.html"><div class="btn">Account</div></a>
+		<a href="../pages/login.html"><div class="btn">Account</div></a>
 	</div>
 	
 	<div class="cart">
-		<span id="open-close-cart" onclick="open_close_dropdown('shopping-cart')"><span class="icon-shoppingcart"></span> (2)</span>
-		
+		<span id="open-close-cart" onclick="open_close_dropdown('shopping-cart')"><span class="icon-shoppingcart"></span>(<span class="simpleCart_quantity"></span>)</span>
+    
 		<!-- Shopping cart -->
 		<div id="shopping-cart" class="closed">
 			<div class="cont">
-				<span class="title">Shopping cart (2)</span>
+				<span class="title">Shopping cart</span>
 				
+                <div class="simpleCart_items"></div>
+                
 				<!-- Shopping cart item 1 -->
 				<div class="item">
-					<img src="../../../assets/img/products/bags/DSC_2325.jpg" alt="" class="item-img" />
+					<img src="../assets/img/products/bags/DSC_2325.jpg" alt="" class="item-img" />
 					<div class="item-details">
-						<span class="item-name">Woman's Bag</span>
+                        <span class="item-name">
+                            <a href="shoppingcart.html" style="text-decorations:none; color:inherit;">
+                            <p id="name"></p>
+                            <script type="text/javascript">
+                                document.getElementById("name").innerHTML = simpleCart.items().length;
+                            </script>
+                            </a>
+                        </span>
 						<span class="item-price">Rp 2,500,000</span>
-						<a href="home.html#" class="btn-item-delete">Delete</a>
-					</div>
-				</div>.
-				
-				<!-- Shopping cart item 2 -->
-				<div class="item">
-					<img src="../../../assets/img/products/wallets/DSC_2544.jpg" alt="" class="item-img" />
-					<div class="item-details">
-                        <span class="item-name"><a href="shoppingcart.html">Woman's Purse</a></span>
-						<span class="item-price">Rp 4,350,000</span>
-						<a href="home.html#" class="btn-item-delete">Delete</a>
+						<div class="item-remove "><a href="javascript:;" class="simpleCart_remove">Remove</a></div>
 					</div>
 				</div>
+                
+                <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+				
 			</div>
 		</div>
 	</div>

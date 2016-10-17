@@ -404,7 +404,7 @@ module.exports = function (element) {
 },{"../lib/dom":3,"../lib/helper":6,"./instances":18}],10:[function(require,module,exports){
 'use strict';
 
-var _ = require('../../lib/helper');
+var _ = require('../lib/helper');
 var instances = require('../instances');
 var updateGeometry = require('../update-geometry');
 var updateScroll = require('../update-scroll');
@@ -463,11 +463,11 @@ module.exports = function (element) {
   bindClickRailHandler(element, i);
 };
 
-},{"../../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],11:[function(require,module,exports){
+},{"../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],11:[function(require,module,exports){
 'use strict';
 
-var _ = require('../../lib/helper');
-var dom = require('../../lib/dom');
+var _ = require('../lib/helper');
+var dom = require('../lib/dom');
 var instances = require('../instances');
 var updateGeometry = require('../update-geometry');
 var updateScroll = require('../update-scroll');
@@ -568,11 +568,11 @@ module.exports = function (element) {
   bindMouseScrollYHandler(element, i);
 };
 
-},{"../../lib/dom":3,"../../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],12:[function(require,module,exports){
+},{"../lib/dom":3,"../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],12:[function(require,module,exports){
 'use strict';
 
-var _ = require('../../lib/helper');
-var dom = require('../../lib/dom');
+var _ = require('../lib/helper');
+var dom = require('../lib/dom');
 var instances = require('../instances');
 var updateGeometry = require('../update-geometry');
 var updateScroll = require('../update-scroll');
@@ -700,7 +700,7 @@ module.exports = function (element) {
   bindKeyboardHandler(element, i);
 };
 
-},{"../../lib/dom":3,"../../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],13:[function(require,module,exports){
+},{"../lib/dom":3,"../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],13:[function(require,module,exports){
 'use strict';
 
 var instances = require('../instances');
@@ -858,7 +858,7 @@ module.exports = function (element) {
 },{"../instances":18,"../update-geometry":19}],15:[function(require,module,exports){
 'use strict';
 
-var _ = require('../../lib/helper');
+var _ = require('../lib/helper');
 var instances = require('../instances');
 var updateGeometry = require('../update-geometry');
 var updateScroll = require('../update-scroll');
@@ -966,10 +966,10 @@ module.exports = function (element) {
   bindSelectionHandler(element, i);
 };
 
-},{"../../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],16:[function(require,module,exports){
+},{"../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],16:[function(require,module,exports){
 'use strict';
 
-var _ = require('../../lib/helper');
+var _ = require('../lib/helper');
 var instances = require('../instances');
 var updateGeometry = require('../update-geometry');
 var updateScroll = require('../update-scroll');
@@ -1144,7 +1144,7 @@ module.exports = function (element) {
   bindTouchHandler(element, i, _.env.supportsTouch, _.env.supportsIePointer);
 };
 
-},{"../../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],17:[function(require,module,exports){
+},{"../lib/helper":6,"../instances":18,"../update-geometry":19,"../update-scroll":20}],17:[function(require,module,exports){
 'use strict';
 
 var _ = require('../lib/helper');
