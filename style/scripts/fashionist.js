@@ -58,6 +58,19 @@ function hide_actions(product_id) {
 	close.className = 'add-to-cart close';
 }
 
+function open_big_search() {
+    var search_container = document.getElementById('bigsearch');
+	if (search_container.className == 'show') {
+        search_container.className = '';
+    } else {
+        search_container.className = 'show';
+    }
+}
+
+function redirectpage() {
+    location.href="founditem.html";
+}
+
 
 // Open big search
 $(document).ready(function(){

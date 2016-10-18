@@ -7,16 +7,11 @@
 	<nav id="main-nav">
 		<div class="ul">
             <div class="li">
-				<a href="home.html#">HOME <span class="icon-down"></span></a>
+				<a href="home.html#">HOME</a>
 			</div>
             
 			<div class="li">
-				<a href="stories.html#">STORIES <span class="icon-down"></span></a>
-				
-				<div class="ul submenu small">
-					<span class="title">Stories</span>
-					<span class="smrow"><a href="stories.html">DetailStory</a></span>
-				</div>
+				<a href="stories.html#">STORIES</a>
 			</div>
 			
 			<div class="li">
@@ -40,7 +35,7 @@
 			</div>
             
             <div class="li">
-				<a href="03_homepage.html#">Collections <span class="icon-down"></span></a>
+				<a href="home.html#">Collections <span class="icon-down"></span></a>
 				
 				<div class="ul submenu big-submenu">
 					<div class="container">
@@ -87,23 +82,13 @@
 				</div>
             </div>
 			
-			<div class="li">
-				<a href="shop.html#">COLLECTIONS <span class="icon-down"></span></a>
-				
-				<div class="ul submenu small">
-					<span class="title">Shop pages</span>
-                    <span class="smrow"><a href="shopbags.html">Bags</a></span>
-					<span class="smrow"><a href="shoppurses.html">Wallets</a></span>
-					<span class="smrow"><a href="shopaccessories.html">Accessories</a></span>
-				</div>
-			</div>
 			
 			<div class="li">
-				<a href="stores.html">Store <span class="icon-down"></span></a>
+				<a href="stores.html">Store</a>
 			</div>
             
             <div class="li">
-				<a href="home.html#">FIND US <span class="icon-down"></span></a>
+				<a href="stores.html#">FIND US</a>
 			</div>
 		</div>
 	</nav>
@@ -159,11 +144,11 @@
 	<div class="slash">/</div>
 	
 	<div class="search">
-		<span class="icon-search search-open"></span>
+		<span class="icon-search search-open" onclick="open_big_search()"></span>
 		<div id="bigsearch">
-			<div class="close-search"></div>
+			<div class="close-search" onclick="open_big_search()"></div>
 			<div class="searchform">
-				<form>
+				<form method="post" action="founditem.html">
 					<input type="text" placeholder="Search for something..."/>
 					<input type="submit" value="Search" />
 				</form>

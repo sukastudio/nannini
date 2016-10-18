@@ -760,7 +760,7 @@ input.custom-spinner {
 	height: 45px;
 	border: none;
 	border-bottom: 1px solid #EEE;
-	
+	font-style: italic;
 	color: #999;
 }
 

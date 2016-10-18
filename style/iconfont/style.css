@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('http://suka.studio/client/nannini-firenze.co.id/template/iconfont/fonts/icomoon.woff%3f3l5r1c');
-  src:  url('http://suka.studio/client/nannini-firenze.co.id/template/iconfont/fonts/icomoon.woff%3f3l5r1c') format('embedded-opentype'),
-    url('http://suka.studio/client/nannini-firenze.co.id/template/iconfont/fonts/icomoon.ttf%3f3l5r1c') format('truetype'),
-    url('http://suka.studio/client/nannini-firenze.co.id/template/iconfont/fonts/icomoon.woff%3f3l5r1c') format('woff'),
-    url('http://suka.studio/client/nannini-firenze.co.id/template/iconfont/fonts/icomoon.svg%3f3l5r1c') format('svg');
+  src:  url('fonts/icomoon.woff%3f3l5r1c');
+  src:  url('fonts/icomoon.woff%3f3l5r1c') format('embedded-opentype'),
+    url('fonts/icomoon.ttf%3f3l5r1c') format('truetype'),
+    url('fonts/icomoon.woff%3f3l5r1c') format('woff'),
+    url('fonts/icomoon.svg%3f3l5r1c') format('svg');
   font-weight: normal;
   font-style: normal;
 }
